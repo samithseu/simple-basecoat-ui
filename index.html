@@ -2,12 +2,44 @@
 <html lang="en">
 
 <head>
+    <!-- Theme Switcher -->
+    <script>
+        (() => {
+            try {
+                const stored = localStorage.getItem("themeMode");
+                if (
+                stored
+                    ? stored === "dark"
+                    : matchMedia("(prefers-color-scheme: dark)").matches
+                ) {
+                document.documentElement.classList.add("dark");
+                }
+            } catch (_) {}
+
+            const apply = (dark) => {
+                document.documentElement.classList.toggle("dark", dark);
+                try {
+                localStorage.setItem("themeMode", dark ? "dark" : "light");
+                } catch (_) {}
+            };
+
+            document.addEventListener("basecoat:theme", (event) => {
+                const mode = event.detail?.mode;
+                apply(
+                mode === "dark"
+                    ? true
+                    : mode === "light"
+                    ? false
+                    : !document.documentElement.classList.contains("dark")
+                );
+            });
+        })();
+
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Using Basecoat UI</title>
     <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
-    <!-- Theme Switcher -->
-    <script src="js/theme-switcher.js"></script>
     <!-- TailwindCSS CDN -->
     <script src="js/tailwindcss-v4-cdn.min.js"></script>
     <!-- basecoat CSS -->
