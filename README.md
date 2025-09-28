@@ -1,4 +1,4 @@
-# Basecoat UI
+# Simple Basecoat UI
 
 This repository was created for my personal use with <a href="https://basecoatui.com/">Basecoat UI</a> only especially a repo that can be cloned and used in a simple way.
 
