@@ -1,4 +1,8 @@
-<!DOCTYPE html><html lang="en"> <head><!-- Default theme detector (to get rid of quick flash) --><script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Default theme detector (to get rid of quick flash) -->
+    <script>
       (() => {
         try {
           const stored = localStorage.getItem("themeMode");
@@ -24,65 +28,645 @@
             mode === "dark"
               ? true
               : mode === "light"
-                ? false
-                : !document.documentElement.classList.contains("dark")
+              ? false
+              : !document.documentElement.classList.contains("dark")
           );
         });
       })();
-    </script><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v5.14.1"><title>Basecoat UI - Alert</title><link rel="stylesheet" href="/simple-basecoat-ui/_astro/accordion.IXYHOoAL.css"></head> <body> <aside id="sidebar" class="sidebar" data-side="left" aria-hidden="false"> <nav aria-label="Sidebar navigation"> <!-- sidebar title --> <a href="https://basecoatui.com/" title="Basecoat UI"> <h1 class="border-b w-full text-center px-2 py-3.5 text-lg font-bold text-foreground flex justify-center items-center gap-2 [&:has(svg)_svg]:size-4 [&:has(svg)_svg]:rounded-full [&:has(svg)_svg]:saturate-0 [&:has(svg)_svg]:contrast-150"> <svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_169_2)"> <path d="M256 0H0V256H256V0Z" fill="#1447E6"></path> <path d="M208 128L128 208" stroke="white" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M192 40L40 192" stroke="white" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"></path> </g> <defs> <clipPath id="clip0_169_2"> <rect width="256" height="256" fill="white"></rect> </clipPath> </defs> </svg>
-Basecoat UI - Sidebar
-</h1> </a> <!-- sidebar menus --> <section class="scrollbar"> <!-- each group --> <div role="group" aria-labelledby="group-label-content-1"> <h3 id="group-label-content-1">Each Sidebar Group</h3> <ul> <!-- each menu --> <li> <a href="/simple-basecoat-ui/"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><!-- Icon from IonIcons by Ben Sperry - https://github.com/ionic-team/ionicons/blob/main/LICENSE --> <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M262.29 192.31a64 64 0 1 0 57.4 57.4a64.13 64.13 0 0 0-57.4-57.4M416.39 256a154 154 0 0 1-1.53 20.79l45.21 35.46a10.81 10.81 0 0 1 2.45 13.75l-42.77 74a10.81 10.81 0 0 1-13.14 4.59l-44.9-18.08a16.11 16.11 0 0 0-15.17 1.75A164.5 164.5 0 0 1 325 400.8a15.94 15.94 0 0 0-8.82 12.14l-6.73 47.89a11.08 11.08 0 0 1-10.68 9.17h-85.54a11.11 11.11 0 0 1-10.69-8.87l-6.72-47.82a16.07 16.07 0 0 0-9-12.22a155 155 0 0 1-21.46-12.57a16 16 0 0 0-15.11-1.71l-44.89 18.07a10.81 10.81 0 0 1-13.14-4.58l-42.77-74a10.8 10.8 0 0 1 2.45-13.75l38.21-30a16.05 16.05 0 0 0 6-14.08c-.36-4.17-.58-8.33-.58-12.5s.21-8.27.58-12.35a16 16 0 0 0-6.07-13.94l-38.19-30A10.81 10.81 0 0 1 49.48 186l42.77-74a10.81 10.81 0 0 1 13.14-4.59l44.9 18.08a16.11 16.11 0 0 0 15.17-1.75A164.5 164.5 0 0 1 187 111.2a15.94 15.94 0 0 0 8.82-12.14l6.73-47.89A11.08 11.08 0 0 1 213.23 42h85.54a11.11 11.11 0 0 1 10.69 8.87l6.72 47.82a16.07 16.07 0 0 0 9 12.22a155 155 0 0 1 21.46 12.57a16 16 0 0 0 15.11 1.71l44.89-18.07a10.81 10.81 0 0 1 13.14 4.58l42.77 74a10.8 10.8 0 0 1-2.45 13.75l-38.21 30a16.05 16.05 0 0 0-6.05 14.08c.33 4.14.55 8.3.55 12.47"></path></svg> <span>All components</span> </a> </li> <!-- each menu (with sub menu) --> <li> <details id="submenu-content-1-3"> <summary aria-controls="submenu-content-1-3-content"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><!-- Icon from IonIcons by Ben Sperry - https://github.com/ionic-team/ionicons/blob/main/LICENSE --> <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M436.67 184.11a27.17 27.17 0 0 1-38.3 0l-22.48-22.49a27.15 27.15 0 0 1 0-38.29l50.89-50.89a.85.85 0 0 0-.26-1.38C393.68 57 351.09 64.15 324.05 91c-25.88 25.69-27.35 64.27-17.87 98a27 27 0 0 1-7.67 27.14l-173 160.76a40.76 40.76 0 1 0 57.57 57.54l162.15-173.3a27 27 0 0 1 26.77-7.7c33.46 8.94 71.49 7.26 97.07-17.94c27.49-27.08 33.42-74.94 20.1-102.33a.85.85 0 0 0-1.36-.22Z"></path><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M224 284c-17.48-17-25.49-24.91-31-30.29a18.24 18.24 0 0 1-3.33-21.35a20.8 20.8 0 0 1 3.5-4.62l15.68-15.29a18.7 18.7 0 0 1 5.63-3.87a18.11 18.11 0 0 1 20 3.62c5.45 5.29 15.43 15 33.41 32.52m49.18 46.58c40.95 38.1 90.62 83.27 110 99.41a13.46 13.46 0 0 1 .94 19.92L394.63 444a14 14 0 0 1-20.29-.76c-16.53-19.18-61.09-67.11-99.27-107"></path><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="m17.34 193.5l29.41-28.74a4.7 4.7 0 0 1 3.41-1.35a4.85 4.85 0 0 1 3.41 1.35h0a9.86 9.86 0 0 0 8.19 2.77c3.83-.42 7.92-1.6 10.57-4.12c6-5.8-.94-17.23 4.34-24.54a207 207 0 0 1 19.78-22.6c6-5.88 29.84-28.32 69.9-44.45A107.3 107.3 0 0 1 206.67 64c22.59 0 40 10 46.26 15.67a89.5 89.5 0 0 1 10.28 11.64a79 79 0 0 0-9.21-2.77a68.8 68.8 0 0 0-20-1.26c-13.33 1.09-29.41 7.26-38 14c-13.9 11-19.87 25.72-20.81 44.71c-.68 14.12 2.72 22.1 36.1 55.49a6.6 6.6 0 0 1-.34 9.16l-18.22 18a6.88 6.88 0 0 1-9.54.09c-21.94-21.94-36.65-33.09-45-38.16s-15.07-6.5-18.3-6.85a30.85 30.85 0 0 0-18.27 3.87a11.4 11.4 0 0 0-2.64 2a14.14 14.14 0 0 0 .42 20.08l1.71 1.6a4.63 4.63 0 0 1 0 6.64L71.73 246.6a4.7 4.7 0 0 1-3.41 1.4a4.86 4.86 0 0 1-3.41-1.35l-47.57-46.43a4.88 4.88 0 0 1 0-6.72"></path></svg>
-Each Component
-</summary> <ul id="submenu-content-1-3-content" class="mt-0.5"> <li> <a href="/simple-basecoat-ui/accordion"> <span>accordion</span> </a> </li> <li> <a href="/simple-basecoat-ui/alert"> <span>alert</span> </a> </li> <li> <a href="/simple-basecoat-ui/alert-dialog"> <span>alert-dialog</span> </a> </li> <li> <a href="/simple-basecoat-ui/avatar"> <span>avatar</span> </a> </li> <li> <a href="/simple-basecoat-ui/badge"> <span>badge</span> </a> </li> <li> <a href="/simple-basecoat-ui/breadcrumb"> <span>breadcrumb</span> </a> </li> <li> <a href="/simple-basecoat-ui/button"> <span>button</span> </a> </li> <li> <a href="/simple-basecoat-ui/card"> <span>card</span> </a> </li> <li> <a href="/simple-basecoat-ui/checkbox"> <span>checkbox</span> </a> </li> <li> <a href="/simple-basecoat-ui/combobox"> <span>combobox</span> </a> </li> <li> <a href="/simple-basecoat-ui/dialog"> <span>dialog</span> </a> </li> <li> <a href="/simple-basecoat-ui/dropdown-menu"> <span>dropdown-menu</span> </a> </li> <li> <a href="/simple-basecoat-ui/form"> <span>form</span> </a> </li> <li> <a href="/simple-basecoat-ui/input"> <span>input</span> </a> </li> <li> <a href="/simple-basecoat-ui/label"> <span>label</span> </a> </li> <li> <a href="/simple-basecoat-ui/pagination"> <span>pagination</span> </a> </li> <li> <a href="/simple-basecoat-ui/popover"> <span>popover</span> </a> </li> <li> <a href="/simple-basecoat-ui/radio-group"> <span>radio-group</span> </a> </li> <li> <a href="/simple-basecoat-ui/select"> <span>select</span> </a> </li> <li> <a href="/simple-basecoat-ui/skeleton"> <span>skeleton</span> </a> </li> <li> <a href="/simple-basecoat-ui/slider"> <span>slider</span> </a> </li> <li> <a href="/simple-basecoat-ui/switch"> <span>switch</span> </a> </li> <li> <a href="/simple-basecoat-ui/table"> <span>table</span> </a> </li> <li> <a href="/simple-basecoat-ui/tabs"> <span>tabs</span> </a> </li> <li> <a href="/simple-basecoat-ui/textarea"> <span>textarea</span> </a> </li> <li> <a href="/simple-basecoat-ui/toast"> <span>toast</span> </a> </li> <li> <details id="submenu-content-1-3"> <summary aria-controls="submenu-content-1-3-content">
-other
-</summary> <ul id="submenu-content-1-3-content" class="mt-0.5"> <li> <a href="/simple-basecoat-ui/tooltip"> <span>tooltip</span> </a> </li> </ul> </details> </li> </ul> </details> </li> </ul> </div> </section> </nav> </aside> <main class="space-y-4"> <div class="flex items-center gap-2 h-[56.8px] border-b px-4 sticky top-0 z-10 backdrop-blur-md"> <button data-tooltip="Toggle sidebar" data-side="right" class="btn-icon-outline size-8" type="button" onclick="document.dispatchEvent(new CustomEvent('basecoat:sidebar'))"> <span class="inline-block"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"> <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm5-2v16"></path> </svg> </span> </button> <button type="button" aria-label="Toggle dark mode" data-tooltip="Toggle dark mode" data-side="right" onclick="document.dispatchEvent(new CustomEvent('basecoat:theme'))" class="btn-icon-outline size-8"> <span class="hidden dark:block"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <circle cx="12" cy="12" r="4"></circle> <path d="M12 2v2"></path> <path d="M12 20v2"></path> <path d="m4.93 4.93 1.41 1.41"></path> <path d="m17.66 17.66 1.41 1.41"></path> <path d="M2 12h2"></path> <path d="M20 12h2"></path> <path d="m6.34 17.66-1.41 1.41"></path> <path d="m19.07 4.93-1.41 1.41"></path> </svg></span> <span class="block dark:hidden"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path> </svg></span> </button> </div> <!-- EACH COMPONENT CODE! -->  <div class="p-4 md:p-6 xl:p-12"> <div class="flex gap-x-10 justify-center"> <div> <div class="grid gap-4 flex-1">  <section id="alert" class="w-full rounded-lg border scroll-mt-14"> <header class="border-b px-4 py-3 flex items-center justify-between"> <h2 class="text-sm font-medium">Alert</h2> <a href="https://basecoatui.com/components/alert" class="text-muted-foreground hover:text-foreground" data-tooltip="See documentation" data-side="left"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4"> <path d="M12 7v14"></path> <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path> </svg> </a> </header> <div class="p-4"> <div class="grid max-w-xl items-start gap-4"> <div class="alert"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <circle cx="12" cy="12" r="10"></circle> <path d="m9 12 2 2 4-4"></path> </svg> <h2>Success! Your changes have been saved</h2> <section>
-This is an alert with icon, title and description.
-</section> </div> <div class="alert"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z"></path> <path d="m9 10 2 2 4-4"></path> </svg> <section>
-This is an alert with icon, description and no title.
-</section> </div> <div class="alert"> <section>
-This one has a description only. No title. No icon.
-</section> </div> <div class="alert"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M18 8a2 2 0 0 0 0-4 2 2 0 0 0-4 0 2 2 0 0 0-4 0 2 2 0 0 0-4 0 2 2 0 0 0 0 4"></path> <path d="M10 22 9 8"></path> <path d="m14 22 1-14"></path> <path d="M20 8c.5 0 .9.4.8 1l-2.6 12c-.1.5-.7 1-1.2 1H7c-.6 0-1.1-.4-1.2-1L3.2 9c-.1-.6.3-1 .8-1Z"></path> </svg> <h2>Let's try one with icon and title.</h2> </div> <div class="alert"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path> <path d="M12 8v4"></path> <path d="M12 16h.01"></path> </svg> <h2>
-This is a very long alert title that demonstrates how the
-              component handles extended text content and potentially wraps
-              across multiple lines
-</h2> </div> <div class="alert"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <rect x="3" y="8" width="18" height="4" rx="1"></rect> <path d="M12 8v13"></path> <path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"></path> <path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"></path> </svg> <section>
-This is a very long alert description that demonstrates how the
-              component handles extended text content and potentially wraps
-              across multiple lines
-</section> </div> <div class="alert"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <circle cx="12" cy="12" r="10"></circle> <line x1="12" x2="12" y1="8" y2="12"></line> <line x1="12" x2="12.01" y1="16" y2="16"></line> </svg> <h2>
-This is an extremely long alert title that spans multiple lines to
-              demonstrate how the component handles very lengthy headings while
-              maintaining readability and proper text wrapping behavior
-</h2> <section>
-This is an equally long description that contains detailed
-              information about the alert. It shows how the component can
-              accommodate extensive content while preserving proper spacing,
-              alignment, and readability across different screen sizes and
-              viewport widths. This helps ensure the user experience remains
-              consistent regardless of the content length.
-</section> </div> <div class="alert-destructive"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <circle cx="12" cy="12" r="10"></circle> <line x1="12" x2="12" y1="8" y2="12"></line> <line x1="12" x2="12.01" y1="16" y2="16"></line> </svg> <h2>Something went wrong!</h2> <section>Your session has expired. Please log in again.</section> </div> <div class="alert-destructive"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <circle cx="12" cy="12" r="10"></circle> <line x1="12" x2="12" y1="8" y2="12"></line> <line x1="12" x2="12.01" y1="16" y2="16"></line> </svg> <h2>Something went wrong!</h2> <section> <p>Please verify your billing information and try again.</p> <ul> <li>Check your card details</li> <li>Ensure sufficient funds</li> <li>Verify billing address</li> </ul> </section> </div> <div class="alert border-amber-50 bg-amber-50 text-amber-900 dark:border-amber-950 dark:bg-amber-950 dark:text-amber-100"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <circle cx="12" cy="12" r="10"></circle> <path d="m9 12 2 2 4-4"></path> </svg> <h2>Plot Twist: This Alert is Actually Amber!</h2> <section>
-This one has custom colors for light and dark mode.
-</section> </div> </div> </div> </section>  </div> </div> </div> </div>  </main> <div id="toaster" class="toaster"></div> <script src="/simple-basecoat-ui/all.min.js"></script> <!-- highlight the sidebar menu --> <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    let currentPath = window.location.pathname.replace(/\/$/, "");
-    if (currentPath === "") currentPath = "/";
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <meta name="generator" content="Astro v5.14.1" />
+    <title>Basecoat UI - Alert</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <aside id="sidebar" class="sidebar" data-side="left" aria-hidden="false">
+      <nav aria-label="Sidebar navigation">
+        <!-- sidebar title -->
+        <a href="https://basecoatui.com/" title="Basecoat UI">
+          <h1
+            class="border-b w-full text-center px-2 py-3.5 text-lg font-bold text-foreground flex justify-center items-center gap-2 [&:has(svg)_svg]:size-4 [&:has(svg)_svg]:rounded-full [&:has(svg)_svg]:saturate-0 [&:has(svg)_svg]:contrast-150"
+          >
+            <svg
+              width="256"
+              height="256"
+              viewBox="0 0 256 256"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_169_2)">
+                <path d="M256 0H0V256H256V0Z" fill="#1447E6"></path>
+                <path
+                  d="M208 128L128 208"
+                  stroke="white"
+                  stroke-width="32"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M192 40L40 192"
+                  stroke="white"
+                  stroke-width="32"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_169_2">
+                  <rect width="256" height="256" fill="white"></rect>
+                </clipPath>
+              </defs>
+            </svg>
+            Basecoat UI - Sidebar
+          </h1>
+        </a>
+        <!-- sidebar menus -->
+        <section class="scrollbar">
+          <!-- each group -->
+          <div role="group" aria-labelledby="group-label-content-1">
+            <h3 id="group-label-content-1">Each Sidebar Group</h3>
+            <ul>
+              <!-- each menu -->
+              <li>
+                <a href="../index.html">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 512 512"
+                  >
+                    <!-- Icon from IonIcons by Ben Sperry - https://github.com/ionic-team/ionicons/blob/main/LICENSE -->
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="32"
+                      d="M262.29 192.31a64 64 0 1 0 57.4 57.4a64.13 64.13 0 0 0-57.4-57.4M416.39 256a154 154 0 0 1-1.53 20.79l45.21 35.46a10.81 10.81 0 0 1 2.45 13.75l-42.77 74a10.81 10.81 0 0 1-13.14 4.59l-44.9-18.08a16.11 16.11 0 0 0-15.17 1.75A164.5 164.5 0 0 1 325 400.8a15.94 15.94 0 0 0-8.82 12.14l-6.73 47.89a11.08 11.08 0 0 1-10.68 9.17h-85.54a11.11 11.11 0 0 1-10.69-8.87l-6.72-47.82a16.07 16.07 0 0 0-9-12.22a155 155 0 0 1-21.46-12.57a16 16 0 0 0-15.11-1.71l-44.89 18.07a10.81 10.81 0 0 1-13.14-4.58l-42.77-74a10.8 10.8 0 0 1 2.45-13.75l38.21-30a16.05 16.05 0 0 0 6-14.08c-.36-4.17-.58-8.33-.58-12.5s.21-8.27.58-12.35a16 16 0 0 0-6.07-13.94l-38.19-30A10.81 10.81 0 0 1 49.48 186l42.77-74a10.81 10.81 0 0 1 13.14-4.59l44.9 18.08a16.11 16.11 0 0 0 15.17-1.75A164.5 164.5 0 0 1 187 111.2a15.94 15.94 0 0 0 8.82-12.14l6.73-47.89A11.08 11.08 0 0 1 213.23 42h85.54a11.11 11.11 0 0 1 10.69 8.87l6.72 47.82a16.07 16.07 0 0 0 9 12.22a155 155 0 0 1 21.46 12.57a16 16 0 0 0 15.11 1.71l44.89-18.07a10.81 10.81 0 0 1 13.14 4.58l42.77 74a10.8 10.8 0 0 1-2.45 13.75l-38.21 30a16.05 16.05 0 0 0-6.05 14.08c.33 4.14.55 8.3.55 12.47"
+                    ></path>
+                  </svg>
+                  <span>All components</span>
+                </a>
+              </li>
+              <!-- each menu (with sub menu) -->
+              <li>
+                <details id="submenu-content-1-3">
+                  <summary aria-controls="submenu-content-1-3-content">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 512 512"
+                    >
+                      <!-- Icon from IonIcons by Ben Sperry - https://github.com/ionic-team/ionicons/blob/main/LICENSE -->
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-miterlimit="10"
+                        stroke-width="32"
+                        d="M436.67 184.11a27.17 27.17 0 0 1-38.3 0l-22.48-22.49a27.15 27.15 0 0 1 0-38.29l50.89-50.89a.85.85 0 0 0-.26-1.38C393.68 57 351.09 64.15 324.05 91c-25.88 25.69-27.35 64.27-17.87 98a27 27 0 0 1-7.67 27.14l-173 160.76a40.76 40.76 0 1 0 57.57 57.54l162.15-173.3a27 27 0 0 1 26.77-7.7c33.46 8.94 71.49 7.26 97.07-17.94c27.49-27.08 33.42-74.94 20.1-102.33a.85.85 0 0 0-1.36-.22Z"
+                      ></path>
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="32"
+                        d="M224 284c-17.48-17-25.49-24.91-31-30.29a18.24 18.24 0 0 1-3.33-21.35a20.8 20.8 0 0 1 3.5-4.62l15.68-15.29a18.7 18.7 0 0 1 5.63-3.87a18.11 18.11 0 0 1 20 3.62c5.45 5.29 15.43 15 33.41 32.52m49.18 46.58c40.95 38.1 90.62 83.27 110 99.41a13.46 13.46 0 0 1 .94 19.92L394.63 444a14 14 0 0 1-20.29-.76c-16.53-19.18-61.09-67.11-99.27-107"
+                      ></path>
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="32"
+                        d="m17.34 193.5l29.41-28.74a4.7 4.7 0 0 1 3.41-1.35a4.85 4.85 0 0 1 3.41 1.35h0a9.86 9.86 0 0 0 8.19 2.77c3.83-.42 7.92-1.6 10.57-4.12c6-5.8-.94-17.23 4.34-24.54a207 207 0 0 1 19.78-22.6c6-5.88 29.84-28.32 69.9-44.45A107.3 107.3 0 0 1 206.67 64c22.59 0 40 10 46.26 15.67a89.5 89.5 0 0 1 10.28 11.64a79 79 0 0 0-9.21-2.77a68.8 68.8 0 0 0-20-1.26c-13.33 1.09-29.41 7.26-38 14c-13.9 11-19.87 25.72-20.81 44.71c-.68 14.12 2.72 22.1 36.1 55.49a6.6 6.6 0 0 1-.34 9.16l-18.22 18a6.88 6.88 0 0 1-9.54.09c-21.94-21.94-36.65-33.09-45-38.16s-15.07-6.5-18.3-6.85a30.85 30.85 0 0 0-18.27 3.87a11.4 11.4 0 0 0-2.64 2a14.14 14.14 0 0 0 .42 20.08l1.71 1.6a4.63 4.63 0 0 1 0 6.64L71.73 246.6a4.7 4.7 0 0 1-3.41 1.4a4.86 4.86 0 0 1-3.41-1.35l-47.57-46.43a4.88 4.88 0 0 1 0-6.72"
+                      ></path>
+                    </svg>
+                    Each Component
+                  </summary>
+                  <ul id="submenu-content-1-3-content" class="mt-0.5">
+                    <li>
+                      <a href="../accordion/index.html">
+                        <span>accordion</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../alert/index.html">
+                        <span>alert</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../alert-dialog/index.html">
+                        <span>alert-dialog</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../avatar/index.html">
+                        <span>avatar</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../badge/index.html">
+                        <span>badge</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../breadcrumb/index.html">
+                        <span>breadcrumb</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../button/index.html">
+                        <span>button</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../card/index.html"> <span>card</span> </a>
+                    </li>
+                    <li>
+                      <a href="../checkbox/index.html">
+                        <span>checkbox</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../combobox/index.html">
+                        <span>combobox</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../dialog/index.html">
+                        <span>dialog</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../dropdown-menu/index.html">
+                        <span>dropdown-menu</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../form/index.html"> <span>form</span> </a>
+                    </li>
+                    <li>
+                      <a href="../input/index.html">
+                        <span>input</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../label/index.html">
+                        <span>label</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../pagination/index.html">
+                        <span>pagination</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../popover/index.html">
+                        <span>popover</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../radio-group/index.html">
+                        <span>radio-group</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../select/index.html">
+                        <span>select</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../skeleton/index.html">
+                        <span>skeleton</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../slider/index.html">
+                        <span>slider</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../switch/index.html">
+                        <span>switch</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../table/index.html">
+                        <span>table</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../tabs/index.html"> <span>tabs</span> </a>
+                    </li>
+                    <li>
+                      <a href="../textarea/index.html">
+                        <span>textarea</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../toast/index.html">
+                        <span>toast</span>
+                      </a>
+                    </li>
+                    <li>
+                      <details id="submenu-content-1-3">
+                        <summary aria-controls="submenu-content-1-3-content">
+                          other
+                        </summary>
+                        <ul id="submenu-content-1-3-content" class="mt-0.5">
+                          <li>
+                            <a href="../tooltip/index.html">
+                              <span>tooltip</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </details>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </nav>
+    </aside>
+    <main class="space-y-4">
+      <div
+        class="flex items-center gap-2 h-[56.8px] border-b px-4 sticky top-0 z-10 backdrop-blur-md"
+      >
+        <button
+          data-tooltip="Toggle sidebar"
+          data-side="right"
+          class="btn-icon-outline size-8"
+          type="button"
+          onclick="document.dispatchEvent(new CustomEvent('basecoat:sidebar'))"
+        >
+          <span class="inline-block">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm5-2v16"
+              ></path>
+            </svg>
+          </span>
+        </button>
+        <button
+          type="button"
+          aria-label="Toggle dark mode"
+          data-tooltip="Toggle dark mode"
+          data-side="right"
+          onclick="document.dispatchEvent(new CustomEvent('basecoat:theme'))"
+          class="btn-icon-outline size-8"
+        >
+          <span class="hidden dark:block"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2"></path>
+              <path d="M12 20v2"></path>
+              <path d="m4.93 4.93 1.41 1.41"></path>
+              <path d="m17.66 17.66 1.41 1.41"></path>
+              <path d="M2 12h2"></path>
+              <path d="M20 12h2"></path>
+              <path d="m6.34 17.66-1.41 1.41"></path>
+              <path d="m19.07 4.93-1.41 1.41"></path></svg
+          ></span>
+          <span class="block dark:hidden"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg
+          ></span>
+        </button>
+      </div>
+      <!-- EACH COMPONENT CODE! -->
+      <div class="p-4 md:p-6 xl:p-12">
+        <div class="flex gap-x-10 justify-center">
+          <div>
+            <div class="grid gap-4 flex-1">
+              <section id="alert" class="w-full rounded-lg border scroll-mt-14">
+                <header
+                  class="border-b px-4 py-3 flex items-center justify-between"
+                >
+                  <h2 class="text-sm font-medium">Alert</h2>
+                  <a
+                    href="https://basecoatui.com/components/alert"
+                    class="text-muted-foreground hover:text-foreground"
+                    data-tooltip="See documentation"
+                    data-side="left"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="size-4"
+                    >
+                      <path d="M12 7v14"></path>
+                      <path
+                        d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"
+                      ></path>
+                    </svg>
+                  </a>
+                </header>
+                <div class="p-4">
+                  <div class="grid max-w-xl items-start gap-4">
+                    <div class="alert">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="m9 12 2 2 4-4"></path>
+                      </svg>
+                      <h2>Success! Your changes have been saved</h2>
+                      <section>
+                        This is an alert with icon, title and description.
+                      </section>
+                    </div>
+                    <div class="alert">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z"
+                        ></path>
+                        <path d="m9 10 2 2 4-4"></path>
+                      </svg>
+                      <section>
+                        This is an alert with icon, description and no title.
+                      </section>
+                    </div>
+                    <div class="alert">
+                      <section>
+                        This one has a description only. No title. No icon.
+                      </section>
+                    </div>
+                    <div class="alert">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M18 8a2 2 0 0 0 0-4 2 2 0 0 0-4 0 2 2 0 0 0-4 0 2 2 0 0 0-4 0 2 2 0 0 0 0 4"
+                        ></path>
+                        <path d="M10 22 9 8"></path>
+                        <path d="m14 22 1-14"></path>
+                        <path
+                          d="M20 8c.5 0 .9.4.8 1l-2.6 12c-.1.5-.7 1-1.2 1H7c-.6 0-1.1-.4-1.2-1L3.2 9c-.1-.6.3-1 .8-1Z"
+                        ></path>
+                      </svg>
+                      <h2>Let's try one with icon and title.</h2>
+                    </div>
+                    <div class="alert">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+                        ></path>
+                        <path d="M12 8v4"></path>
+                        <path d="M12 16h.01"></path>
+                      </svg>
+                      <h2>
+                        This is a very long alert title that demonstrates how
+                        the component handles extended text content and
+                        potentially wraps across multiple lines
+                      </h2>
+                    </div>
+                    <div class="alert">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <rect x="3" y="8" width="18" height="4" rx="1"></rect>
+                        <path d="M12 8v13"></path>
+                        <path
+                          d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"
+                        ></path>
+                        <path
+                          d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"
+                        ></path>
+                      </svg>
+                      <section>
+                        This is a very long alert description that demonstrates
+                        how the component handles extended text content and
+                        potentially wraps across multiple lines
+                      </section>
+                    </div>
+                    <div class="alert">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" x2="12" y1="8" y2="12"></line>
+                        <line x1="12" x2="12.01" y1="16" y2="16"></line>
+                      </svg>
+                      <h2>
+                        This is an extremely long alert title that spans
+                        multiple lines to demonstrate how the component handles
+                        very lengthy headings while maintaining readability and
+                        proper text wrapping behavior
+                      </h2>
+                      <section>
+                        This is an equally long description that contains
+                        detailed information about the alert. It shows how the
+                        component can accommodate extensive content while
+                        preserving proper spacing, alignment, and readability
+                        across different screen sizes and viewport widths. This
+                        helps ensure the user experience remains consistent
+                        regardless of the content length.
+                      </section>
+                    </div>
+                    <div class="alert-destructive">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" x2="12" y1="8" y2="12"></line>
+                        <line x1="12" x2="12.01" y1="16" y2="16"></line>
+                      </svg>
+                      <h2>Something went wrong!</h2>
+                      <section>
+                        Your session has expired. Please log in again.
+                      </section>
+                    </div>
+                    <div class="alert-destructive">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" x2="12" y1="8" y2="12"></line>
+                        <line x1="12" x2="12.01" y1="16" y2="16"></line>
+                      </svg>
+                      <h2>Something went wrong!</h2>
+                      <section>
+                        <p>
+                          Please verify your billing information and try again.
+                        </p>
+                        <ul>
+                          <li>Check your card details</li>
+                          <li>Ensure sufficient funds</li>
+                          <li>Verify billing address</li>
+                        </ul>
+                      </section>
+                    </div>
+                    <div
+                      class="alert border-amber-50 bg-amber-50 text-amber-900 dark:border-amber-950 dark:bg-amber-950 dark:text-amber-100"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="m9 12 2 2 4-4"></path>
+                      </svg>
+                      <h2>Plot Twist: This Alert is Actually Amber!</h2>
+                      <section>
+                        This one has custom colors for light and dark mode.
+                      </section>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div id="toaster" class="toaster"></div>
+    <script src="../all.min.js"></script>
+    <!-- highlight the sidebar menu -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        let currentPath = window.location.pathname.replace(/\/$/, "");
+        if (currentPath === "") currentPath = "/";
 
-    const links = document.querySelectorAll("#sidebar *:is(a)");
+        const links = document.querySelectorAll("#sidebar *:is(a)");
 
-    links.forEach((link) => {
-      // Use link.pathname and clean it up the same way
-      let linkPath = link.pathname.replace(/\/$/, "");
-      if (linkPath === "") linkPath = "/";
-      if (linkPath === currentPath) {
-        link.classList.add("active");
-      }
-    });
-  });
-</script> <!-- open the dialog if one of children is active --> <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const dialogWithActives = document.querySelectorAll(
-      `.sidebar [role="group"] details:has(a.active, a:active)`
-    );
-    dialogWithActives.forEach((dialog) => (dialog.open = true));
-  });
-</script></body></html><!-- basecoat script -->
+        links.forEach((link) => {
+          // Use link.pathname and clean it up the same way
+          let linkPath = link.pathname.replace(/\/$/, "");
+          if (linkPath === "") linkPath = "/";
+          if (linkPath === currentPath) {
+            link.classList.add("active");
+          }
+        });
+      });
+    </script>
+    <!-- open the dialog if one of children is active -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const dialogWithActives = document.querySelectorAll(
+          `.sidebar [role="group"] details:has(a.active, a:active)`
+        );
+        dialogWithActives.forEach((dialog) => (dialog.open = true));
+      });
+    </script>
+  </body>
+</html>
+<!-- basecoat script -->
