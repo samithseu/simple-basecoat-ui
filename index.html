@@ -53,6 +53,8 @@
     </script>
     <!-- basecoat JS -->
     <script src="js/basecoat.min.js" defer></script>
+    <!-- basecoat toast JS -->
+    <script src="js/toast.min.js" defer></script>
 </head>
 
 <body>
@@ -173,8 +175,8 @@
     </aside>
 
     <!-- main content -->
-    <main class="p-4 space-y-4">
-        <div class="flex items-center gap-2">
+    <main class=" space-y-4">
+        <div class="flex items-center gap-2 h-[56.8px] border-b px-4 sticky top-0 z-10 backdrop-blur-md">
             <button data-tooltip="Toggle sidebar" data-side="right" class="btn-icon-outline size-8" type="button"
                 onclick="document.dispatchEvent(new CustomEvent('basecoat:sidebar'))">
                 <span class="inline-block">
@@ -3750,24 +3752,71 @@
                             <div class="p-4">
                                 <div class="flex flex-wrap items-center gap-2">
                                     <div class="flex flex-wrap items-center gap-2">
-                                        <button class="btn-outline" hx-trigger="click"
-                                            hx-get="/fragments/toast/success" hx-target="#toaster"
-                                            hx-swap="beforeend">
+                                        <button 
+                                            class="btn-outline"
+                                            onclick="document.dispatchEvent(new CustomEvent('basecoat:toast', {
+                                                detail: {
+                                                config: {
+                                                    category: 'success',
+                                                    title: 'Success',
+                                                    description: 'A success toast called from the front-end.',
+                                                    cancel: {
+                                                    label: 'Dismiss'
+                                                    }
+                                                }
+                                                }
+                                            }))"
+                                            >
                                             Success
                                         </button>
-                                        <button class="btn-outline" hx-trigger="click"
-                                            hx-get="/fragments/toast/error" hx-target="#toaster"
-                                            hx-swap="beforeend">
+                                        <button 
+                                            class="btn-outline" 
+                                            onclick="document.dispatchEvent(new CustomEvent('basecoat:toast', {
+                                                detail: {
+                                                config: {
+                                                    category: 'error',
+                                                    title: 'Error',
+                                                    description: 'A error toast called from the front-end.',
+                                                    cancel: {
+                                                    label: 'Dismiss'
+                                                    }
+                                                }
+                                                }
+                                            }))">
                                             Error
                                         </button>
-                                        <button class="btn-outline" hx-trigger="click"
-                                            hx-get="/fragments/toast/info" hx-target="#toaster"
-                                            hx-swap="beforeend">
+                                        <button 
+                                            class="btn-outline"
+                                            onclick="document.dispatchEvent(new CustomEvent('basecoat:toast', {
+                                                detail: {
+                                                config: {
+                                                    category: 'Info',
+                                                    title: 'Info',
+                                                    description: 'A Info toast called from the front-end.',
+                                                    cancel: {
+                                                    label: 'Dismiss'
+                                                    }
+                                                }
+                                                }
+                                            }))"
+                                            >
                                             Info
                                         </button>
-                                        <button class="btn-outline" hx-trigger="click"
-                                            hx-get="/fragments/toast/warning" hx-target="#toaster"
-                                            hx-swap="beforeend">
+                                        <button 
+                                            class="btn-outline"
+                                            onclick="document.dispatchEvent(new CustomEvent('basecoat:toast', {
+                                                detail: {
+                                                config: {
+                                                    category: 'Warning',
+                                                    title: 'Warning',
+                                                    description: 'A Warning toast called from the front-end.',
+                                                    cancel: {
+                                                    label: 'Dismiss'
+                                                    }
+                                                }
+                                                }
+                                            }))"
+                                            >
                                             Warning
                                         </button>
                                     </div>
@@ -3815,6 +3864,7 @@
             </div>
         </div>
     </main>
+    <div id="toaster" class="toaster"></div>
 </body>
 
 </html>
